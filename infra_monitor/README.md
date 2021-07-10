@@ -1,7 +1,7 @@
 # Infrastructure Monitoring Solution
 <h2> Explanation</h2>
 <p>Servers used for SSL Offloading or Any other LoadBalancing typically needs</p>
-<p>CPU, Memory, Network Interfaces, IOPS Additionally for SSL 
+<p>CPU, Memory, Network Interfaces, IOPS.  Additionally for SSL 
 Offloading if providers like AVI etc are present we can gleam more
 insights using the API Monitoring.
 I have considered 2 Solutions for this Use Case</p>
