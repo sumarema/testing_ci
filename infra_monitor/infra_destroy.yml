@@ -1,0 +1,5 @@
+---
+  - name: "Cleaning up monitoring infra"
+    hosts: all
+    roles:
+      - { role: destroy}

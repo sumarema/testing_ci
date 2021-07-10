@@ -1,0 +1,13 @@
+- name: "Network Configuration"
+  community.docker.docker_network:
+   name: metric_internal
+   connected:
+     - influxdb
+     - telegraf
+
+- name: "Configuring InfluxDB"
+  community.docker.docker_container_exec:
+   container: influxdb
+   command: /bin/bash -c "sleep 30; influx setup -u admin -p DevOps@123 -r 0 -b influxdb -o test -f"
+
+- name: "

@@ -1,0 +1,16 @@
+- name: "Start a Grafana Container"
+  community.docker.docker_container:
+   name: grafana
+   image: grafana/grafana:latest
+   state: started
+   container_default_behavior: compatibility
+   # auto_remove: no
+   # detach: yes
+   # init: no
+   # interactive: yes
+   # paused: no
+   # privileged: yes
+   # read_only: no
+   # tty: yes
+   ports:
+    - "3000:3000"
