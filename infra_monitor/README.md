@@ -22,6 +22,8 @@ Telegraf config "/etc/telegraf/telegraf.conf" Should be Updated with InfluxDB Co
 <h3>Solution 1 :</h3>
 <p>Ansible: latest version</p>
 <p>Docker: latest version</p>
+<p>For Docker Modules to work, I used community.docker Ansible Collection. To set that up we need to run the below command</p>
+<p> ansible-galaxy collection install community.docker</p>
 <h4>Usage:</h4>
 <p>ansible-playbook -i invent.cfg infra_setup.yml --> Install</p>
 <p>ansible-playbook -i invent.cfg infra_destroy.yml --> Remove</p>
