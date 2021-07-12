@@ -16,6 +16,7 @@ Docker container. But for our use case we can install the Agent in
 the Server which is a LightWeight application. 
 
 Telegraf config "/etc/telegraf/telegraf.conf" Should be Updated with InfluxDB Container IP.
+  Telegraf " http://<influxdb_if>:8092 should have the Dashboard
 </p>
 
 <h3> Pre-requisites</h3>
