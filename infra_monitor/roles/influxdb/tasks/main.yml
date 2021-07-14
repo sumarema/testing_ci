@@ -1,0 +1,16 @@
+- name: "Start InfluxDB Container"
+  community.docker.docker_container:
+   name: influxdb
+   image: influxdb:2.0.7
+   state: started
+   container_default_behavior: compatibility
+   # auto_remove: no
+   # detach: yes
+   # init: no
+   # interactive: yes
+   # paused: no
+   privileged: yes
+   # read_only: no
+   # tty: yes
+   ports:
+    - "8086:8086"
